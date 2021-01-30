@@ -142,135 +142,19 @@ class MyApp extends StatelessWidget {
                       SizedBox(
                         height: 5,
                       ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 40.0,right: 40.0),
-                          child: Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Text('Rank 2',style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white,
-                                ),),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text('Rs. 8', style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white,
-                                ),),
-                              ],
-                            ),
-
-                            decoration: BoxDecoration(
-                                color: Colors.grey,
-                                border: Border.all(color: Colors.white, width: 3)
-                            ),
-                          ),
-                        ),
-                      ),
+                      containerBox(textname: 'Rank 2', cost: 'Rs. 8', colour: Colors.grey,),
                       SizedBox(
                         height: 5,
                       ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 40.0,right: 40.0),
-                          child: Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Text('Rank 3',style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white
-                                ),),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text('Rs. 6', style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white
-                                ),),
-                              ],
-                            ),
-
-                            decoration: BoxDecoration(
-                                color: Colors.brown,
-                                border: Border.all(color: Colors.white, width: 3)
-                            ),
-                          ),
-                        ),
-                      ),
+                      containerBox(textname: 'Rank 3', cost: 'Rs. 6', colour: Colors.brown,),
                       SizedBox(
                         height: 5,
                       ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 40.0,right: 40.0),
-                          child: Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Text('Rank 4-10',style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white,
-                                ),),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text('Rs. 3', style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white,
-                                ),),
-                              ],
-                            ),
-
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                border: Border.all(color: Colors.white, width: 3)
-                            ),
-                          ),
-                        ),
-                      ),
+                      containerBox(textname: 'Rank 4-10', cost: 'Rs. 3', colour: Colors.blue,),
                       SizedBox(
                         height: 5,
                       ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 40.0,right: 40.0),
-                          child: Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Text('Rank 11-20',style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  color: Colors.white
-                                ),),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text('Rs. 2', style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                    color: Colors.white
-                                ),),
-                              ],
-                            ),
-
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                border: Border.all(color: Colors.white, width: 3)
-                            ),
-                          ),
-                        ),
-                      ),
+                      containerBox(textname: 'Rank 11-20', cost: 'Rs. 2', colour: Colors.blue,),
                       SizedBox(
                         height: 5,
                       ),
@@ -314,46 +198,12 @@ class MyApp extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                           children: [
-                             Text('Special Pass',style: TextStyle(fontSize: 10,color: Colors.white),),
-                             Image(image: AssetImage('images/Group 2723.png',),width: 50, height: 50,),
-                           ],
+                          bottamiconwidget(iconname: 'Special Pass', imagename: 'images/Group 2723.png',),
+                          bottamiconwidget(iconname: 'Leaderboard', imagename: 'images/Group 2724.png',),
+                          bottamiconwidget(iconname: 'Home', imagename: 'images/Group 2725.png',),
+                          bottamiconwidget(iconname: 'Features', imagename: 'images/Group 2726.png',),
+                          bottamiconwidget(iconname: 'Game Types', imagename: 'images/Group 2727.png',),
 
-
-                          ),
-                          Column(
-                            children: [
-                              Text('Leader Board',style: TextStyle(fontSize: 10,color: Colors.white),),
-                              Image(image: AssetImage('images/Group 2724.png',),width: 50, height: 50,),
-                            ],
-
-
-                          ),
-                          Column(
-                            children: [
-                              Text('Home',style: TextStyle(fontSize: 10,color: Colors.white),),
-                              Image(image: AssetImage('images/Group 2725.png',),width: 50, height: 50,),
-                            ],
-
-
-                          ),
-                          Column(
-                            children: [
-                              Text('Features',style: TextStyle(fontSize: 10,color: Colors.white),),
-                              Image(image: AssetImage('images/Group 2726.png',),width: 50, height: 50,),
-                            ],
-
-
-                          ),
-                          Column(
-                            children: [
-                              Text('Game Types',style: TextStyle(fontSize: 10, color: Colors.white),),
-                              Image(image: AssetImage('images/Group 2727.png', ),width: 50, height: 50,),
-                            ],
-
-
-                          ),
 
                         ],
                       ),
@@ -363,6 +213,61 @@ class MyApp extends StatelessWidget {
         ),
         ),
       ),
+    );
+  }
+}
+
+class containerBox extends StatelessWidget {
+  final textname;
+  final cost;
+  final Color colour;
+  containerBox({@required this.textname, @required this.cost, @required this. colour});
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.only(left: 40.0,right: 40.0),
+        child: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text('$textname',style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                  color: Colors.white,
+              ),),
+              SizedBox(
+                width: 20,
+              ),
+              Text('$cost', style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                  color: Colors.white,
+              ),),
+            ],
+          ),
+          decoration: BoxDecoration(
+              color: colour,
+              border: Border.all(color: Colors.white, width: 3)
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class bottamiconwidget extends StatelessWidget {
+  final iconname;
+  final imagename;
+  bottamiconwidget({@required this.iconname, @required this.imagename});
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+     children: [
+       Text('$iconname',style: TextStyle(fontSize: 10,color: Colors.white),),
+       Image(image: AssetImage('$imagename',),width: 50, height: 50,),
+     ],
+
     );
   }
 }
